@@ -49,13 +49,26 @@ console.log("final array",arr)
 
 // ================================================ 
 // write the code simple and cleaner way 
-let arr1 = [1,0,1,0,0,0,1,0,0,1]; 
-console.log("input array", arr1);
-let first_pointer = 0 ;
-let second_pointer = arr1.length-1; 
-while(first_pointer < second_pointer) 
-    {
-        if(first_pointer[i] == 0) 
-            i++ 
-        
-    } 
+function seprate(arr){
+  let first_pointer = 0 ; 
+  let second_pointer = arr.length-1;
+  while(i<j){
+     if (arr[first_pointer] == 1)
+     {
+        swap(arr,first_pointer ,second_pointer) 
+        second_pointer--; 
+     }else{
+        i++;
+     }
+
+  }
+
+} 
+function swap(arr,i,j){
+    let temp = arr[i];
+    arr[i] = arr[j]; 
+    arr[j] = temp;
+} 
+let arr1= [1,1,1,0,0,1,0,0,1] 
+let result = seprate(arr1)
+console.log("last result",result)
