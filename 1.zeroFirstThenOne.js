@@ -52,13 +52,13 @@ console.log("final array",arr)
 function seprate(arr){
   let first_pointer = 0 ; 
   let second_pointer = arr.length-1;
-  while(i<j){
+  while(first_pointer<second_pointer){
      if (arr[first_pointer] == 1)
      {
         swap(arr,first_pointer ,second_pointer) 
         second_pointer--; 
      }else{
-        i++;
+        first_pointer++;
      }
 
   }
