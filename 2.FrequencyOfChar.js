@@ -2,17 +2,17 @@
 // using js object
 
 function frequencyOfChar(str){
-  let frequency_obj={}; 
-  for(var single_char of str){
-     if(frequency_obj[single_char]){ 
-        frequency_obj[single_char] += 1;
+  let freqMap={}; 
+  for(var singleChar of str){
+     if(freqMap[singleChar]){ 
+        freqMap[singleChar] += 1;
 
      }else{
-        frequency_obj[single_char] = 1;
+        freqMap[singleChar] = 1;
      }
 
   } 
-  return frequency_obj
+  return freqMap
 
 } 
 
